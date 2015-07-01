@@ -1,5 +1,6 @@
 import Component from '../../client/components/component.react';
 import React from 'react';
+import favicons from './favicons';
 
 export default class Html extends Component {
 
@@ -24,6 +25,7 @@ export default class Html extends Component {
           <meta charSet="utf-8" />
           <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
           <title>{this.props.title}</title>
+          {/* this.renderLinks() */}
           {linkStyles}
         </head>
         <body dangerouslySetInnerHTML={{__html: this.props.bodyHtml}} />
@@ -31,4 +33,22 @@ export default class Html extends Component {
     );
   }
 
+  renderLinks() {
+    return favicons.map(this.renderLink, this)
+  }
+
+  renderLink(link, key) {
+    const {isProduction, version} = this.props;
+    // TODO: Why is not es7.objectRestSpread enabled?
+    //const {href, ...linkProps} = link;
+    const path = !isProduction ? '/assets/favicon/' : '/';
+
+    return (
+      <link
+        key={key}
+        href={`${path}${href}?v=${version}`}
+        {...linkProps}
+      />
+    )
+  }
 }
