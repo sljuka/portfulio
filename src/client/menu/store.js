@@ -4,6 +4,8 @@ import {register} from '../dispatcher';
 
 export const dispatchToken = register(({action, data}) => {
 
+  const SCREEN_WIDTH_BREAKPOINT = 700
+
   switch (action) {
 
     case toggle:
@@ -16,7 +18,7 @@ export const dispatchToken = register(({action, data}) => {
       break;
 
     case setMenuStyle:
-      const isCompact = data <= 700
+      const isCompact = data <= SCREEN_WIDTH_BREAKPOINT
       if(!isCompact)
         menuCursor(menu => menu.set('expanded', false))
       menuCursor(menu => menu.set('compact', isCompact))
