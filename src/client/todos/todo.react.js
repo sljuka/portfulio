@@ -1,4 +1,3 @@
-import './todo.styl';
 import * as actions from './actions';
 import Component from '../components/component.react';
 import Editable from '../components/editable.react';

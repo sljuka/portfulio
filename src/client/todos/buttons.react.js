@@ -1,5 +1,4 @@
 // import {FormattedMessage} from 'react-intl';
-import './buttons.styl';
 import * as actions from '../todos/actions';
 import Component from '../components/component.react';
 import React from 'react';

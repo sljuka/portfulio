@@ -12,6 +12,7 @@ import '../auth/store';
 import '../examples/store';
 import '../todos/store';
 import '../users/store';
+import '../menu/store';
 
 class App extends Component {
 
@@ -40,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <div className="page">
-        <Header isLoggedIn={this.state.isLoggedIn} />
+        <Header menu={this.state.menu} />
         <RouteHandler {...this.state} />
         <Footer />
       </div>

@@ -12,9 +12,7 @@ export default (
   <Route handler={App} path="/">
     <DefaultRoute handler={Home} name="home" />
     <NotFoundRoute handler={NotFound} name="not-found" />
-    <Route handler={Examples} name="examples" />
-    <Route handler={Login} name="login" />
-    <Route handler={Me} name="me" />
-    <Route handler={Todos} name="todos" />
+    <Route handler={Examples} name="projects" />
+    <Route handler={Login} name="contact" />
   </Route>
 );
