@@ -34,12 +34,10 @@ export default {
       title: 'Examples'
     },
     header: {
-      examples: 'Examples',
-      h1Html: `<a href="https://github.com/este/este">Este.js</a> App`,
+      headerText: 'Bucka portfolio',
       home: 'Home',
-      login: 'Login',
-      me: 'Me (protected)',
-      todos: 'Todos'
+      contact: 'Contact',
+      projects: 'Projects'
     },
     home: {
       infoHtml: `App starter kit for <a href="https://github.com/este/este">Este.js</a>. Check`,

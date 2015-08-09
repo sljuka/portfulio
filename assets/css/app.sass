@@ -2,6 +2,7 @@
 @import ./base/font
 @import ./base/variables
 @import ./settings/bootstrap_overrides
+@import ./settings/clearfix_hack
 
 //put earlier because of @media mixin depend on it
 @import ./vendor/bootstrap/custom
@@ -21,3 +22,4 @@
 // Load components from manifest file as requiring from the component itself
 // caused issues with starting Node.js/Webpack
 @import ./components/form
+@import ./components/navigation

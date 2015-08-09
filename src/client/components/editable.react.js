@@ -1,4 +1,3 @@
-import './editable.styl';
 import Component from '../components/component.react';
 import React from 'react';
 import Textarea from 'react-textarea-autosize';
