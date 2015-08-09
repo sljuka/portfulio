@@ -21,3 +21,4 @@ export const i18nCursor = appState.cursor(['i18n']);
 export const pendingActionsCursor = appState.cursor(['pendingActions']);
 export const todosCursor = appState.cursor(['todos']);
 export const usersCursor = appState.cursor(['users']);
+export const menuCursor = appState.cursor(['menu']);

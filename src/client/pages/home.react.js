@@ -13,8 +13,9 @@ class Home extends Component {
         <div className="home-page">
           <p>
             <FormattedHTMLMessage message={msg('home.infoHtml')} />{' '}
-            <Link to="todos">{msg('home.todos')}</Link>.
+            <Link to="contact">{msg('home.todos')}</Link>.
           </p>
+          <button>test</button>
         </div>
       </DocumentTitle>
     );
