@@ -1,17 +1,19 @@
 .main-nav
-  height: 41px
+  height: 60px
   width: 100%
   font-size: 11pt
   font-family: 'PT Sans', Arial, sans-serif
   font-weight: bold
   position: relative
-  border-bottom: 1px solid #283744
+  padding: 10px
 
 .main-nav ul
   padding: 0
   margin: 0 auto
-  width: 600px
+  width: 400px
   height: 40px
+  background-color: #282828
+  float: right
 
 .main-nav li
   display: inline
@@ -25,6 +27,7 @@
   border: none
   float: right
   width: 100px
+  text-transform: uppercase
 
 .main-nav .toggle-menu
   background-image: url("/assets/icons/hamburgers.png")
@@ -35,10 +38,10 @@
 
 .main-nav li a
   border-right: 1px solid #576979
-  color: #1CB497
+  color: white
 
-.main-nav li:hover
-  background-color: #ddd
+.main-nav li:hover a
+  color: #47c0b9
 
 @media only screen and (min-width : 701px)
   .main-nav li:last-child a

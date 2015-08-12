@@ -1,3 +1,4 @@
+import About from './pages/about.react';
 import App from './app/app.react';
 import Examples from './pages/examples.react';
 import Home from './pages/home.react';
@@ -14,5 +15,6 @@ export default (
     <NotFoundRoute handler={NotFound} name="not-found" />
     <Route handler={Examples} name="projects" />
     <Route handler={Login} name="contact" />
+    <Route handler={About} name="about" />
   </Route>
 );

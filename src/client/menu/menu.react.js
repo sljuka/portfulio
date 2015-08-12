@@ -30,11 +30,9 @@ export default class Menu extends Component {
     const menuList =
       <ul className="clearfix">
         <li><Link to="home">{msg('header.home')}</Link></li>
+        <li><Link to="about">{msg('header.about')}</Link></li>
         <li><Link to="projects">{msg('header.projects')}</Link></li>
         <li><Link to="contact">{msg('header.contact')}</Link></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Web 2.0</a></li>
-        <li><a href="#">Tools</a></li> 
       </ul> 
 
     const expanded = this.props.menu.get('expanded')
@@ -42,14 +40,16 @@ export default class Menu extends Component {
     const displayMenuList = !compact || (compact && expanded)
 
     return (
-      <nav className="main-nav clearfix">
-        {compact &&
-          <a href="#" className="toggle-menu" onClick={this.toggleMenu}></a>
-        }
-        {displayMenuList &&
-          menuList
-        }
-      </nav>
+      <div className="container">
+        <nav className="main-nav clearfix">
+          {compact &&
+            <a href="#" className="toggle-menu" onClick={this.toggleMenu}></a>
+          }
+          {displayMenuList &&
+            menuList
+          }
+        </nav>
+      </div>
     );
   }
 

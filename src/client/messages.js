@@ -36,6 +36,7 @@ export default {
     header: {
       headerText: 'Bucka portfolio',
       home: 'Home',
+      about: 'About',
       contact: 'Contact',
       projects: 'Projects'
     },

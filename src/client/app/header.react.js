@@ -9,9 +9,7 @@ class Header extends Component {
 
     return (
       <header>
-        <nav className="main-nav clearfix">
-          <Menu {...this.props} />
-        </nav>
+        <Menu {...this.props} />
       </header>
     );
   }
