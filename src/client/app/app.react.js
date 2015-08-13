@@ -1,6 +1,5 @@
 import '../../../assets/css/app.sass';
 import Component from '../components/component.react';
-import Footer from './footer.react';
 import Header from './header.react';
 import React from 'react';
 import {RouteHandler} from 'react-router';
@@ -43,7 +42,6 @@ class App extends Component {
       <div className="page">
         <Header menu={this.state.menu} />
         <RouteHandler {...this.state} />
-        <Footer />
       </div>
     );
   }

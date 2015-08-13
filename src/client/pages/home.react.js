@@ -10,13 +10,7 @@ class Home extends Component {
   render() {
     return (
       <DocumentTitle title={msg('home.title')}>
-        <div className="home-page container">
-          <p>
-            <FormattedHTMLMessage message={msg('home.infoHtml')} />{' '}
-            <Link to="contact">{msg('home.todos')}</Link>.
-          </p>
-          <button>test</button>
-        </div>
+        <span>HOME</span>
       </DocumentTitle>
     );
   }
