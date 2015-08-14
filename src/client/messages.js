@@ -42,7 +42,7 @@ export default {
     },
     home: {
       infoHtml: `App starter kit for <a href="https://github.com/este/este">Este.js</a>. Check`,
-      title: 'Este.js App',
+      title: 'David Sljukic portfolio',
       todos: 'todos'
     },
     me: {

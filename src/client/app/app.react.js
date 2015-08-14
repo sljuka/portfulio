@@ -1,10 +1,12 @@
 import '../../../assets/css/app.sass';
 import Component from '../components/component.react';
+import DocumentTitle from 'react-document-title';
 import Header from './header.react';
 import React from 'react';
-import {RouteHandler} from 'react-router';
 import {appState} from '../state';
 import {measureRender} from '../console';
+import {msg} from '../intl/store';
+import {RouteHandler} from 'react-router';
 
 // All stores must be imported here.
 import '../auth/store';
@@ -39,16 +41,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className='container'>
-        <div className='small-logo'>
-          <span className='light-text'>David Sljukic - </span>
-          <span className='mediterano'>portfolio</span>
+      <DocumentTitle title={msg('home.title')}>
+        <div className='container'>
+          <div className='small-logo'>
+            <span className='light-text'>David Sljukic - </span>
+            <span className='mediterano'>portfolio</span>
+          </div>
+          <div className='big-border'>
+            <Header menu={this.state.menu} />
+            <RouteHandler {...this.state} />
+          </div>
         </div>
-        <div className='big-border'>
-          <Header menu={this.state.menu} />
-          <RouteHandler {...this.state} />
-        </div>
-      </div>
+      </DocumentTitle>
     );
   }
 
