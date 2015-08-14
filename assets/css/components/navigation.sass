@@ -1,16 +1,15 @@
 .main-nav
-  height: 60px
+  height: 70px
   width: 100%
   font-size: 11pt
   font-family: 'PT Sans', Arial, sans-serif
-  font-weight: bold
   position: relative
-  padding: 10px
+  padding: 15px
 
 .main-nav ul
   padding: 0
   margin: 0 auto
-  width: 400px
+  width: 480px
   height: 40px
   background-color: #282828
   float: right
@@ -26,7 +25,7 @@
   line-height: 40px
   border: none
   float: right
-  width: 100px
+  width: 120px
   text-transform: uppercase
 
 .main-nav .toggle-menu
@@ -39,9 +38,17 @@
 .main-nav li a
   border-right: 1px solid #576979
   color: white
+  letter-spacing: 3px
+  font-size: 14px
 
-.main-nav li:hover a
-  color: #47c0b9
+.main-nav li a:hover
+  color: $mediterano-blue
+
+.main-nav li a.active:hover
+  color: white
+
+.main-nav li a.active
+  background-color: $mediterano-blue
 
 @media only screen and (min-width : 701px)
   .main-nav li:last-child a

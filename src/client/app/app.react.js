@@ -39,9 +39,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="page">
-        <Header menu={this.state.menu} />
-        <RouteHandler {...this.state} />
+      <div className='container'>
+        <div className='small-logo'>
+          <span className='light-text'>David Sljukic - </span>
+          <span className='mediterano'>portfolio</span>
+        </div>
+        <div className='big-border'>
+          <Header menu={this.state.menu} />
+          <RouteHandler {...this.state} />
+        </div>
       </div>
     );
   }
