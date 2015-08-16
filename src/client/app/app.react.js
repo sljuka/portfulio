@@ -2,6 +2,7 @@ import '../../../assets/css/app.sass';
 import Component from '../components/component.react';
 import DocumentTitle from 'react-document-title';
 import Header from './header.react';
+import Footer from './footer.react';
 import React from 'react';
 import {appState} from '../state';
 import {measureRender} from '../console';
@@ -14,6 +15,7 @@ import '../examples/store';
 import '../todos/store';
 import '../users/store';
 import '../menu/store';
+import '../tooltipPopup/store';
 
 class App extends Component {
 
@@ -50,6 +52,7 @@ class App extends Component {
           <div className='big-border'>
             <Header menu={this.state.menu} />
             <RouteHandler {...this.state} />
+            <Footer {...this.state} />
           </div>
         </div>
       </DocumentTitle>

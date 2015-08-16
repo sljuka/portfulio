@@ -9,7 +9,7 @@ class Home extends Component {
         <div className='col-md-4 cv-pick'>
           <div className='personal-pic'>
           </div>
-          <button className='cv-button'>curriculum vitae</button>
+          <a className='cv-button' type='application/pdf' target='_blank' href="assets/docs/david_sljukic_CV.pdf">curriculum vitae</a>
         </div>
         <div className='col-md-8 about-page-text'>
           <h2>About me</h2>

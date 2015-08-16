@@ -8,6 +8,10 @@ export default {
     expanded: false,
     compact: false
   },
+  tooltipPopup: {
+    skypeTooltipShowed: false,
+    googleTooltipShowed: false
+  },
   auth: {
     data: null,
     form: null
