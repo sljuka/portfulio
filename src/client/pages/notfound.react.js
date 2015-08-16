@@ -8,13 +8,7 @@ class NotFound extends Component {
 
   render() {
     return (
-      <DocumentTitle title={msg('notFound.title')}>
-        <div className="notfound-page">
-          <h1>{msg('notFound.header')}</h1>
-          <p>{msg('notFound.message')}</p>
-          <Link to="home">{msg('notFound.continueMessage')}</Link>
-        </div>
-      </DocumentTitle>
+      <p className='not-available'>Page not available</p>
     );
   }
 
