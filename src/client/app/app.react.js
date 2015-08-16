@@ -46,7 +46,7 @@ class App extends Component {
       <DocumentTitle title={msg('home.title')}>
         <div className='container'>
           <div className='small-logo'>
-            <span className='light-text'>David Sljukic - </span>
+            <span className='light-text'>David Šljukić - </span>
             <span className='mediterano'>portfolio</span>
           </div>
           <div className='big-border'>
