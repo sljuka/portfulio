@@ -3,6 +3,7 @@ import React from 'react';
 import {Link} from 'react-router'
 import {msg} from '../intl/store'
 import {setMenuStyle, toggle} from '../menu/actions'
+import SmallLogo from '../components/smalllogo.react';
 
 export default class Menu extends Component {
 
@@ -43,6 +44,9 @@ export default class Menu extends Component {
       <nav className='main-nav clearfix'>
         {compact &&
           <a href='#' className='toggle-menu' onClick={this.toggleMenu}></a>
+        }
+        {compact &&
+          <SmallLogo />
         }
         {displayMenuList &&
           menuList

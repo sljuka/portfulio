@@ -8,6 +8,7 @@ import {appState} from '../state';
 import {measureRender} from '../console';
 import {msg} from '../intl/store';
 import {RouteHandler} from 'react-router';
+import SmallLogo from '../components/smalllogo.react';
 
 // All stores must be imported here.
 import '../auth/store';
@@ -42,13 +43,15 @@ class App extends Component {
   }
 
   render() {
+
+    const compact = this.state.menu.get('compact')
+
     return (
       <DocumentTitle title={msg('home.title')}>
         <div className='container'>
-          <div className='small-logo'>
-            <span className='light-text'>David Šljukić - </span>
-            <span className='mediterano'>portfolio</span>
-          </div>
+          {!compact &&
+            <SmallLogo />
+          }
           <div className='big-border'>
             <Header menu={this.state.menu} />
             <RouteHandler {...this.state} />

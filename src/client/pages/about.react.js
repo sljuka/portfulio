@@ -6,12 +6,14 @@ class Home extends Component {
   render() {
     return (
       <div className='row about-page'>
-        <div className='col-md-4 cv-pick'>
+        <div className='col-md-4 col-xs-12 cv-pick'>
+          <div>
           <div className='personal-pic'>
+          </div>
           </div>
           <a className='cv-button' type='application/pdf' target='_blank' href="assets/docs/david_sljukic_CV.pdf">curriculum vitae</a>
         </div>
-        <div className='col-md-8 about-page-text'>
+        <div className='col-md-8 col-xs-12 about-page-text'>
           <h2>About me</h2>
 
           <p>
