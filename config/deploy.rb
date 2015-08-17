@@ -40,7 +40,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app) do
-      execute :sudo, "/sbin/restart portfulio"
+      # execute :sudo, "/sbin/restart portfulio"
     end
   end
 
