@@ -35,15 +35,15 @@ set :linked_dirs, fetch(:linked_dirs, []).push('node_modules')
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-# namespace :deploy do
+namespace :deploy do
   
-#   desc 'Restart application'
-#   task :restart do
-#     on roles(:app) do
-#       execute :sudo, "/sbin/restart portfulio"
-#     end
-#   end
+  desc 'Restart application'
+  task :restart do
+    on roles(:app) do
+      execute :sudo, "/sbin/restart portfulio"
+    end
+  end
 
-# end
+end
 
-# after "deploy:publishing", "deploy:restart"
+after "deploy:publishing", "deploy:restart"
